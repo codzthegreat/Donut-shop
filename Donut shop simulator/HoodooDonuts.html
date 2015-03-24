@@ -1,0 +1,46 @@
+<script>
+
+var mNPH= "Minimum customers per hour";
+var mXPH= "Maximum customers per hour";
+var dPC= "Donuts per customer";
+var cPH= "Customers per hour";
+var dADB= " Daily amount of donuts to bake";
+var dAHB= " hourly amount of donuts to bake";
+
+function HoodooDonuts(site, openingTime, closingTime, mNPH, mXPH, dPC) {
+	this.site= site;
+	this.openingTime= openingTime;
+	this.closingTime= closingTime;
+	this.mNPH= mNPH;
+	this.mXPH= mXPH;
+	this.dPC= dPC;
+	
+	this.randomcPH= function(mNPH, mXPH){
+		return Math.random() * (mXPH - mNPH) + mNPH;
+	}
+	
+	this.hoursOpen= function(openingTime, closingTime){
+		return closingtime - openingtime;
+	}
+
+	this.dADB= function(dPC, hoursOpen, randomcPH){
+		return dPC * gethoursOpen * getrandomcPH;
+	}
+
+	this.dAHB= function(dADB, hoursOpen){
+		return dADB % hoursOpen;
+	}
+
+
+var downtownHD= new hoodooDonuts("downtown", 6, 17, 8, 43, 4.5);
+var capitalHillHD= new hoodooDonuts("capital hill", 6, 17, 4, 37, 2);
+var southLakeUnionHD= new hoodooDonuts("south lake union", 6, 17, 9, 23, 6.33);
+var wedgewoodHD= new hoodooDonuts("wedgewood", 6, 17, 2, 28, 1.25);
+var ballardHD= new hoodooDonuts("ballard", 6, 17, 8, 58, 3.75);
+
+
+console.log(downtownHD, capitalHillHD, southLakeUnionHD, wedgewoodHD, ballardHD);
+
+};
+
+</script>

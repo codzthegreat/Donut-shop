@@ -1,0 +1,54 @@
+* {
+	color: white;
+}
+body {
+	background: purple;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#header {
+	text-align: center;
+	font-size: 10px;
+}
+h1 {
+	font-size: 75px;
+}
+h2 {
+	text-align: center;
+	font-size: 40px;
+}
+#subheading {
+	text-align: center;
+}
+#Q {
+	font-family: Impact, Charcoal, sans-serif;
+}
+table{
+	text-align: center;
+	border: 5px solid;
+}
+h3 {
+	text-align: center;
+}
+#Location {
+	background: #33ff99;
+}
+#Openingtime {
+	background: #cc0000;
+}
+#Closingtime {
+	background: #ff1493;
+}
+#Minimumcustomersph {
+	background: #666600;
+}
+#Maximumcustomersph {
+	background: #0066ff;
+}
+#Averagedonutspc {
+	background: #00ff00;
+}
+#importantfunction {
+	background: #505050;
+}
+
+
